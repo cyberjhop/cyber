@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.pgb.brewapp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="https://phonegap.com/ns/1.0">
+	<name>iTECH</name>
+	<description>
+		A Mobile Instructive Application for IT
+	</description>
+
+	<author email="seymourbutts@phonegap.com" href="https://phonegap.com">
+	   Jofil Consulta
+	</author>
+	<preference name="Orientation" value="landscape" />
+	<preference name="Orientation" value="portrait" />
+	<preference name="phonegap-version" value="cli-9.0.0" />
+	<preference name="fullscreen" value="true" />
+	<icon src="icon.png" />
+</widget>

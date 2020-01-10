@@ -1,0 +1,256 @@
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-image: url(../../images/side.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+    box-shadow: 0px 5px 15px 0px;
+}
+/* The navigation menu links */
+.sidenav a {
+    padding: 10px 10px 20px 10px;
+    text-decoration: none;
+    font-size: 2.5vh;
+    display: block;
+    transition: 0.3s;
+    text-shadow: 2px 2px 4px #00000080;
+    color: white;
+    font-weight: 800;
+}
+.sidenav a:hover {
+     animation: flick 2s linear forwards;
+     color: black;
+     background:#FEE;
+     box-shadow:#0FF 0px 0px 10px 1px;
+}
+
+/* When you mouse over the navigation links, change their color */
+#header .logo img:hover{
+ animation: iTECH_logo 2s linear forwards;
+}
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 36px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+@keyframes flick {
+	2% { 
+	      color: black;
+	      text-shadow: 15px 15px 15px rgb(25, 3, 122);
+	}
+	3% {
+	  color: black;
+	      text-shadow: none;
+	}
+	6% {
+        color: black;
+    	  text-shadow: 0 0 15px rgb(30, 5, 255);
+	}
+	9% {
+        color: black;
+	      text-shadow: none;
+	}
+	11% {
+        color: black;
+    	  text-shadow: 0 0 15px rgb(30, 5, 255);
+	}
+	14% {
+        color: black;
+	      text-shadow: none;
+	}
+	18% {
+        color: black;
+	      text-shadow: 0 0 15px rgb(30, 5, 255);
+	}
+	32% {
+        color: black;
+        text-shadow: none;
+	}
+	33% {
+        color: black;
+        text-shadow: 0 0 15px rgb(30, 5, 255);
+	}
+	37% {
+        color: black;
+        text-shadow: none;
+	}
+	39% {
+        color: black;
+        text-shadow: 0 0 15px rgb(30, 5, 255);
+	}
+	43% {
+        color: black;
+	    text-shadow: none;
+	}
+	46% {
+        color: black;
+        text-shadow: 0 0 15px rgb(30, 5, 255);
+	}
+	47% {
+        color: black;
+        text-shadow: none;
+	}
+	100% {
+        color: black;
+	    text-shadow: 0 0 15px rgb(30, 5, 255);
+	}
+  }
+@keyframes iTECH_logo {
+2% { 
+-webkit-filter: drop-shadow(3px 3px 3px #1900ff);
+filter: drop-shadow(5px 5px #0044ff 222222);
+}
+3% {
+-webkit-filter: drop-shadow(3px 3px 3px none);
+filter: drop-shadow(5px 5px #0044ff 222222);
+}
+6% {
+
+-webkit-filter: drop-shadow(3px 3px 3px #0044ff);
+filter: drop-shadow(5px 5px #0044ff 222222);
+}
+9% {
+
+-webkit-filter: drop-shadow(3px 3px 3px none);
+filter: drop-shadow(5px 5px #0044ff 222222);
+}
+11% {
+
+-webkit-filter: drop-shadow(3px 3px 3px #0077ff);
+filter: drop-shadow(5px 5px #0044ff 222222);
+}
+14% {
+
+-webkit-filter: drop-shadow(3px 3px 3px none);
+filter: drop-shadow(5px 5px #0044ff 222222);
+}
+18% {
+
+        -webkit-filter: drop-shadow(3px 3px 3px rgb(0, 4, 253));
+        filter: drop-shadow(5px 5px #0044ff 222222);
+}
+32% {
+
+        -webkit-filter: drop-shadow(3px 3px 3px none);
+        filter: drop-shadow(5px 5px #0044ff 222222);
+}
+33% {
+
+        -webkit-filter: drop-shadow(3px 3px 3px #2f00ff);
+        filter: drop-shadow(5px 5px #0044ff 222222);
+}
+37% {
+
+        -webkit-filter: drop-shadow(3px 3px 3px none);
+        filter: drop-shadow(5px 5px #0044ff 222222);
+}
+39% {
+
+        -webkit-filter: drop-shadow(3px 3px 3px #3700ff);
+        filter: drop-shadow(5px 5px #0044ff 222222);
+}
+43% {
+
+        -webkit-filter: drop-shadow(3px 3px 3px none);
+        filter: drop-shadow(5px 5px #0044ff 222222);
+}
+46% {
+
+        -webkit-filter: drop-shadow(3px 3px 3px #0044ff);
+        filter: drop-shadow(5px 5px #0044ff 222222);
+}
+47% {
+
+        -webkit-filter: drop-shadow(3px 3px 3px none);
+        filter: drop-shadow(5px 5px #0044ff 222222);
+}
+100% {
+
+        -webkit-filter: drop-shadow(3px 3px 3px #0026ff);
+        filter: drop-shadow(5px 5px #0044ff 222222);
+}
+}
+  #myInput {
+    background-image: url('../../images/search.png');
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+  }
+
+  #myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  /*
+  #myUL li a {
+    border: 1px solid #ddd; /* Add a border to all links 
+    margin-top: -1px; /* Prevent double borders 
+    background-color: #f6f6f6; /* Grey background color 
+    padding: 12px; /* Add some padding 
+    text-decoration: none; /* Remove default text underline 
+    font-size: 18px; /* Increase the font-size 
+    color: black; /* Add a black text color 
+    display: block; /* Make it into a block element to fill the whole list 
+  }*/
+  
+  #myUL li a:hover:not(.header) {
+    background-color: rgba(238, 238, 238, 0.322); /* Add a hover effect to all links, except for headers*/
+    border-radius: 10px;
+  } 
+  #myUL li a {
+    text-decoration: none; 
+    display: block; 
+    margin: 0;
+    padding: 0;
+  }
+  .social{
+        display: inline-block !important;
+        float: left !important;
+        position: absolute;
+        top: 500px;
+        left: 20px;
+  }
+  .social ul li{
+        list-style:none;
+        float:left;
+        margin-right:50px;
+  }

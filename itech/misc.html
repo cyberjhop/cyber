@@ -1,0 +1,396 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>iTECH</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/nav.css" />
+		<link rel="stylesheet" href="assets/css/modal.css" />
+		<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+		<link rel="shortcut icon" href="images/itechlogo_v1.png" type="image/x-icon">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<div id="mySidenav" class="sidenav" style="font-size: 10px;">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<a href="index.html"><i style="font-size:24px" class="fa">&#xf015;</i></i>Home</a>
+					<a href="instructive_programming.html"><i style="font-size:24px" class="fa">&#xf1c9;</i>Instructive Programming</a></li>
+					<a href="networking.html"><i style="font-size:24px" class="fa">&#xf1eb;</i></i>Networking</a>
+					<a href="minigames.html"><i style="font-size:24px" class="fa">&#xf192;</i>Mini-games</a>
+					<a href="misc.html"><i class="fa fa-cogs" style="font-size:24px"></i>Miscellaneous</a>
+					<a href="about.html"><i style="font-size:24px" class="fa">&#xf2b9;</i>About</a>
+					
+				</div>
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">	
+							<span style="font-size:20px;cursor:pointer" onclick="openNav()"><img src="images/itechlogo_v1.png" style="height: 60px; width: 60px;"></span>
+					</div>
+						<div class="content">
+							<div class="inner">
+								<h1 >Miscellaneous</h1>
+								<p>Knowledge is Power</p>
+							</div>
+						</div>
+					</header>
+					
+					<div class="miscContent">Topics
+						<ul style="list-style:none;">
+							<span class="miscTips" onclick="show()" style="font-size: 2vh; font-family: 'Arial', Times, serif; display: block;">How to remove virus in pendrives?</span>
+							<div id="modal" style="display:none;">
+								<p>Here, we explained this solution step-by-step. Simply, follow all steps to get the desired results. But, keep one thing mind i.e., appropriate use of command prompt can lead to a serious issue.</p><br>
+								<p><b>Step 1</b>: First of all, press Win+R keys together and this will automatically open the Run wizard.</p><br>
+								<p><b>Step 2</b>: Now, type CMD in the given field and press Enter key. This will start Command Prompt on your Windows local machine.</p><br>
+								<p><b>Step 3</b>: Additionally, you have to ensure that your USB flash drive is properly connected to your system and does not open the disk.</p><br>
+								<p><b>Step 4</b>: Subsequently, in Command Prompt, add attrib -h -r -s /s /d E:\*.* command and then hit on Enter key to proceed ahead. </p><br>
+								<p><b>Step 5</b>: Here, you can replace letter E with your own if required. To do so, Navigate to This PC/My Computer after that check the disk letter.</p><br>
+								<p><b>Step 6</b>: Finally, this will delete all shortcut viruses from your USB flash drive without taking too much time.</p><br>
+							</div>
+							<span class="miscTips" onclick="show1()" style="font-size: 2vh; font-family: 'Arial', Times, serif; display: block;">How to Chat With Command Prompt</span>
+							<div id="modal1" style="display:none;">
+								<p>Have you ever wanted to do something useful with command prompt like chat through a school's network or talk to your friend without having to download any fancy chat software? Now you can with a few simple steps!</p><br>
+								<p><b>Step 1: </b> Open notepad then type:
+									<pre>
+										<code>
+@ echo off
+:A
+Cls
+echo MESSENGER
+set /p n=User:
+set /p m=Message:
+net send %n% %m%
+Pause
+Goto A
+										</code>
+									</pre>
+								</p>
+								<br><p><b>Step 2: </b> When you're finished, click on file, save as, then save it as messenger.bat.</p>
+								<br><p><b>Step 3: </b> Go to control panel (make sure you are in Classic View). Click on "administrative tools", then click on "services".</p>
+								<br><p><b>Step 4: </b> Now find the "messenger" service in the list on the right, then open it. You'll see "startup type" which should be disabled, so click on that and select "manual".</p>
+								<br><p><b>Step 5: </b> Now press the start button in the upper left hand corner of the window (not the green start button), and click OK.</p>
+								<br><p><b>Step 6: </b> Next, do the same procedure on the remote computer. Until this service is activated on that PC, or you won't be able to use this!</p>
+								<br><p><b>Step 7: </b> Now click on the messenger file you made. Since it is a batch file it will open with cmd (command prompt). It should show "MESSENGER" at the top and "User:" below that. Type the IP address of the remote computer. If it is in the network, then when you type the message next, it should send it to them. It will be likewise on the other computer. There you got it!</p>
+								
+							</div>
+							<span class="miscTips" onclick="show3()" style="font-size: 2vh; font-family: 'Arial', Times, serif; display: block;">Make a super hidden folder in windows without any extra software</span>
+							<div id="modal3" style="display:none;">
+								<p>To do this we need to launch a command prompt, so press the Win + R key combination and type cmd then hit the enter button.</p><br>
+								<p>Now we are going to use the attrib command, so go ahead and type a command similar to the following (you’ll need to substitute the path to your own folder here).</p>
+								<input type="text" value="attrib +s +h “C:\Users\Jhop\Desktop\Top Secret”">
+								<br><p>You will need to replace the stuff in quotes to an absolute path of a folder or file on your system  that you want to make hidden.</p>
+								<br><p>Now if I go look for the Top Secret folder on my Desktop it is gone, even with explorer set to show hidden files and folders.</p>
+								<br><p>To unhide the file or folder you can run the same command, except this time use “-“ instead of the “+” signs.</p>
+								<input type="text" value="attrib -s -h “C:\Users\Taylor Gibb\Desktop\Top Secret”">
+								<p>Like magic, my folder appeared again.</p>
+								
+							</div>
+							<span class="miscTips" onclick="show4()" style="font-size: 2vh; font-family: 'Arial', Times, serif; display: block;">Highly Paid Programming Languages to Learn in 2019</span>
+							<div id="modal4" style="display:none;">
+								<p>Taking into account the wide variety of modern programming languages, deciding which one to start studying can be a difficult task. But if your goal is to master the profession and earn good money using your skills in the future, everything becomes much easier.</p><br>
+								<p><img src="images/us-top.jpg" style="width: 220px;"></p>
+								<p>Clojure $90k</p>
+								<p>F# $80k</p>
+								<p>Go $80k</p>
+								<p>Scala $78k</p>
+								<p>Elixer $76k</p>
+								<p>Ruby $75k</p>
+								<p>WebAssembly $73k</p>
+								<p>Rust $72k</p>
+								<p>Erlang $71k</p>
+								<p>Bash/Shell/PowerShell $69</p>
+								<p>R $64k</p>
+								<p>Python $63k</p>
+								<p>Object-C $62k</p>
+								<p>TypeScript $60k</p>
+								<p>C# $59k</p>
+								<p>Swift $59k</p>
+								<p>Kotlin $57k</p>
+								<p>SQL $57k</p>
+								<p>JavaScript $56</p>
+								<p>C++ $55k</p>
+								<p>HTML/CSS $55k</p>
+								<p>VBA $55k</p>
+								<p>Assembly $52k</p>
+								<p>C $52k</p>
+								<p>Java $52k</p>
+							</div>
+							<span class="miscTips" onclick="show5()" style="font-size: 2vh; font-family: 'Arial', Times, serif; display: block;">How to Use Pen Drive As RAM</span>
+							<div id="modal5" style="display:none;">
+								<p>This will teach you how to improve the speed of your Windows PC by using a USB flash drive as virtual RAM. As long as you're using Windows 10, 8, 7, or Vista, Windows comes with a built-in feature that makes it super easy to allocate the entirety of your flash drive as extra memory that can be accessed when needed. Unfortunately there's no equivalent option for macOS.</p><br>
+								<br><p><b>Insert your blank USB flash drive into the PC.</b>In most cases, a window called "AutoPlay" will pop-up automatically.</p>
+								<ul>
+									<li>If no such window appears, press ⊞ Win+E to open the File Explorer, right-click the drive in the left panel, then click Open AutoPlay.</li>
+									<li>f the drive is not blank, you should format it before you continue. Press ⊞ Win+E to open the File Explorer, right-click the drive in the left panel, and then select Format. Once formatted, right-click the drive and select <b>Open AutoPlay</b>.</li>
+								</ul>
+								<br><p><b>Click Speed up my system on the "AutoPlay" window</b>. This opens your USB drive's properties to the ReadyBoost tab.</p>
+								<ul>
+									<li>If you see an error on the tab says that your drive is not suitable for ReadyBoost, you may have plugged the drive into a USB port that isn't fast enough. Try a different port. If that doesn't help, you'll need to use a different USB drive.</li>
+									<li>If you see an error that says the computer is fast enough that ReadyBoost won't provide any benefits, it's usually because you're using an SSD (solid-state drive). No performance gains would be possible with a USB drive in this case.</li>
+								</ul>
+								<br><p><b>Select Dedicate this device to ReadyBoost or Use this device</b>. You'll see one of these two options near the top of the ReadyBoost tab.</p>
+								<br><p><b>Click OK</b>. This adds a special cache file to the USB drive that allows it to be used by Windows as additional RAM.</p>
+								<ul>
+									<li>Windows will start using the drive as RAM immediately, although you may not notice speed improvements until you've populated the new cache file by running your normal tasks.</li>
+								</ul>
+							</div>
+							<span class="miscTips" onclick="show6()" style="font-size: 2vh; font-family: 'Arial', Times, serif; display: block;">How to Hide a Recovery Partition (or Any Disk) in Windows 10</span>
+							<div id="modal6" style="display:none;">
+								<p>Any disk connected to your PC (whether removeable or integrated) shows up in the disk management tools, and typically Explorer and other desktop applications. <br><br>Today, we’re going to hide a partition (or entire disk) for those times you’d rather keep sensitive files out of the prying eyes of casual users who may access your laptop (or desktop). It’ll still be visible in certain tools, like Disk Management, but won’t appear in Explorer or various other programs that might display it.
+								</p><br>
+								<br><p>And if you change your mind later, you can always make it visible again.</p>
+								<ol>
+									<li>If no such window appears, press ⊞ Win+E to open the File Explorer, right-click the drive in the left panel, then click Open AutoPlay.</li>
+									<li>If the drive is not blank, you should format it before you continue. Press ⊞ Win+E to open the File Explorer, right-click the drive in the left panel, and then select Format. Once formatted, right-click the drive and select <b>Open AutoPlay</b>.</li>
+									<li>Locate the partition you’d like to hide and click to select it.</li>
+									<li>Right-click the partition (or disk) and select Change Drive Letter and Paths from the list of options.</li>
+									<li>Click the Remove button.This won’t delete anything.</li>
+									<li>Click Yes on the warning confirming you’d like to hide the disk or partition. If the drive is currently in use, you’ll need to restart your PC after this step.
+										></li>
+									<li>To make it visible again, right-click the disk or partition in Disk Management.</li>
+									<li>Select Change Drive Letter and Paths.</li>
+									<li>Click the Add button.</li>
+									<li>Click OK to assign the drive or partition a new letter.</li>
+								</ol>
+							</div>
+							<span class="miscTips" onclick="show7()" style="font-size: 2vh; font-family: 'Arial', Times, serif; display: block;">How to activate God Mode in Windows 10</span>
+							<div id="modal7" style="display:none;">
+								<h3>What Is God Mode?</h3>
+								<p>No, God Mode doesn’t unlock any extra secret features in Windows or let you do any tweaking that you can’t do in the regular Windows interface. Instead, it’s simply a special folder you can enable that exposes most of Windows’ admin, management, settings, and Control Panel tools in a single, easy-to-scroll-through interface.
+								</p><br><br>
+								<br><p>And yes, you can also find a lot of this stuff by searching the Start menu, but to do that, you kind of need to know what you’re looking for begin with. The God Mode folder offers an easier way to browse through 206 of these tools and get to know them.</p>
+								<br>
+								<br><p>Here are the categories of tools you’ll find in God Mode:</p>
+								<br>
+								<ul>
+									<li>Administrative Tools</li>
+									<li>AutoPlay</li>
+									<li>Backup and Restore</li>
+									<li>Color Management</li>
+									<li>Credential Manager</li>
+									<li>Date and Time</li>
+									<li>Devices and Printers</li>
+									<li>Ease of Access Center</li>
+									<li>File Explorer Options</li>
+									<li>File History and many more.</li>
+								</ul>
+								<h3>Enabling God Mode in Windows 10</h3>
+								<br><p>To make this work, you must be using an account with administrative privileges. Go to your desktop and create a new folder by right-clicking any open area, pointing to “New” on the context menu, and then clicking the “Folder” command.</p>
+								<br><p>Now, rename the folder to the following:</p>
+								<input type="text" value="GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}">
+								<br><p>To use a name other than GodMode, just replace “GodMode” in the above text with whatever you want to name the folder. The characters that follow (including the period) must remain exactly as listed above. If you remove “GodMode” without adding any text in its place, you’ll receive the following error.</p>
+								<br><p>Once you’ve properly renamed the folder, you’ll notice the folder icon change to a control panel icon.</p>
+								<br><p>Double-click the icon to open the newly-created God Mode. The major categories are organized alphabetically and so are the more than 200 settings you’ll find within those categories.</p>
+								<br><p>While it’s certainly handy for getting to know the official names of all the Windows tools, you’ll probably find (like we did) that it’s faster to search for them through the Start menu. Still, the God Mode folder offers a handy introduction to all the tools available and a great way to search for things when you’re not quite sure what they’re named.</p>
+							</div>
+							<span class="miscTips" onclick="show8()" style="font-size: 2vh; font-family: 'Arial', Times, serif; display: block;">How to create blank folder names in Windows 10</span>
+							<div id="modal8" style="display:none;">
+								<p>Today, we will see how to create blank folder names in Windows. I have used this trick earlier on Windows Vista and Windows 7 – and it now also works on Windows 10/8.1 as well. I do not remember if it worked on Windows XP and earlier.
+								</p><br><br>
+								<br><h3>Create blank folder names</h3>
+								<br>
+								<br><p>Using this trick, you can display a folder without a name. There is one caveat, however. Your computer needs to have a Numeric keyboard pad. In case some of you do not know, Numeric keypad or NumPad is the section of the keyboard on the right side, which usually contains 17 keys, viz. 0 to 9, +, -, *, /, ., Num Lock and Enter keys.</p>
+								<br>
+								<br><p>To create blank folder names in Windows 10, right-click on the Windows desktop and select New > Folder.</p>
+								<br>
+								<br><p>The folder will get created on the desktop.</p>
+								<br>
+								<br><p>If you right-click the folder, select Rename and enter only spaces,  the operating system will not accept it</p>
+								<br>
+								<br><p>To remove the name and display a blank name, right-click on the folder and select Rename. Now press the Alt key and from the Numeric keypad, press 0160.</p>
+								<br>
+								<p>A folder with no name will be created. Change its icon, and you could have a smart-looking folder on your desktop.</p>
+								<br><p>Do not have a NumPad? Check if this forum post on how to have blank folder names in Windows on a laptop without a Numeric pad works for you. Fortunately, my new Dell Inspiron 15 7537 laptop has a numeric pad, so I was easily able to create such name-less folders.</p>
+							</div>
+							<span class="miscTips" onclick="show9()" style="font-size: 2vh; font-family: 'Arial', Times, serif; display: block;">How to display your Name in Windows Taskbar</span>
+							<div id="modal9" style="display:none;">
+								<p>With Windows, you can always customize the look and feel of your system. For instance, you can display a name of your choice in the Windows Taskbar just adjacent to the digital time clock – just for the heck of it! Let us see how to go about it.
+								</p><br><br>
+								<br><h3>Display Name in Taskbar</h3>
+								<br>
+								<br><p>The tip may especially interest the younger set. This fun-tip will let you customize the alphabets appearing after the time numerals in the taskbar. Put your name if you wish!</p>
+								<br>
+								<br><p>In Windows 8, press Win+X in combination to bring up the Power Task Menu. From it, choose ‘Control Panel’. Then, select  Region.</p>
+								<br>
+								<br><p>Now, from the ‘Region’ window that appears on your computer screen, select ‘Additional Settings’ button.</p>
+								<br>
+								<br><p>Later, from the ‘Customize Format’ window, choose the ‘Time’ tab.</p>
+								<br>
+								<br><p>Here, change both the AM and PM letters to any name you wish.</p>
+								<br>
+								<p>Make sure that the format you are using has “tt” in it.</p>
+								<br><p>That is: Time Format = hh:mm:ss tt</p>
+								<p>Then, simply click on Apply > OK.</p>
+								<br><br><p>If you do not like the changes made, reverse them and restore it to default settings by simply clicking on the reset button or by changing it back manually to AM and PM.</p>
+								<p>In <b>Windows 7</b>, open Control Panel, select Region and Language > Formats tab > Additional settings button and then in the Customize Format windows which opens, select Time tab and follow the above procedure.</p>
+							</div>
+							<span class="miscTips" onclick="show10()" style="font-size: 2vh; font-family: 'Arial', Times, serif; display: block;">How To Password Protect a Folder in Windows 10</span>
+							<div id="modal10" style="display:none;">
+								<p>We all have computer files we'd like to keep secret from the world, but not everyone knows how to password protect a folder in Windows 10. Whether you're hiding notes from someone with access to your computer or (hopefully) something less drastic, you're allowed to have some privacy. Fortunately, in Windows 10, you can tuck those unmentionable plans or files in a secret folder that is password protected, and you can do it without buying any additional software. Once you've created a new folder in Windows 10, here's how to password protect it.
+								</p><br><br>
+								<br><h3>How To Lock a Folder With a Password in Windows 10</h3>
+								<ol>
+									<li> Right-click inside the folder where the files you want to protect are located. The folder you want to hide can even be on your desktop.</li>
+									<li>Select "New" from the contextual menu. </li>
+									<li>Click on "Text Document."</li>
+									<li>Hit Enter. It doesn't matter what the file will be named. You can delete this text file once the lockable folder has been made.</li>
+									<li>Double-click the text file to open it.</li>
+									<li>Enter the below text into the new document:</li>
+									<li><pre>
+										<code>
+cls
+
+@ECHO OFF
+
+title Folder Locker
+
+if EXIST "Control Panel.{21EC2020-3AEA-1069-A2DD-08002B30309D}" goto UNLOCK
+
+if NOT EXIST Locker goto MDLOCKER
+
+:CONFIRM
+
+echo Are you sure u want to Lock the folder(Y/N)
+
+set/p "cho=>"
+
+if %cho%==Y goto LOCK
+
+if %cho%==y goto LOCK
+
+if %cho%==n goto END
+
+if %cho%==N goto END
+
+echo Invalid choice.
+
+goto CONFIRM
+
+:LOCK
+
+ren Locker "Control Panel.{21EC2020-3AEA-1069-A2DD-08002B30309D}"
+
+attrib +h +s "Control Panel.{21EC2020-3AEA-1069-A2DD-08002B30309D}"
+
+echo Folder locked
+
+goto End
+
+:UNLOCK
+
+echo Enter password to Unlock folder
+
+set/p "pass=>"
+
+if NOT %pass%==Your-Password-Here goto FAIL
+
+attrib -h -s "Control Panel.{21EC2020-3AEA-1069-A2DD-08002B30309D}"
+
+ren "Control Panel.{21EC2020-3AEA-1069-A2DD-08002B30309D}" Locker
+
+echo Folder Unlocked successfully
+
+goto End
+
+:FAIL
+
+echo Invalid password
+
+goto end
+
+:MDLOCKER
+
+md Locker
+
+echo Locker created successfully
+
+goto End
+
+:End
+										</code>
+									</pre></li>
+									<li>Find where it says "Your-Password-Here" in the document.</li>
+									<li>Replace "Your-Password-Here" with the password you want to lock the folder with.</li>
+									<li>
+										<pre>
+											<code>
+goto End
+
+:UNLOCK
+
+echo Enter password to unlok folder
+
+set/p "pass=>"
+
+if NOT %pass%==yourpassword goto FAIL
+											</code>
+										</pre>
+									</li>
+									<li>Click File.</li>
+									<li>"Select Save As..."</li>
+									<li>Click on the "Text Documents (*.txt)" menu bar that's next to "Save as type:"</li>
+									<li>Select "All Files"</li>
+									<li>Change the file name to "FolderLocker.bat"</li>
+									<li>Click "Save"</li>
+									<li>Double-click FolderLocker.</li>
+									<p>The Locker folder has been generated!</p>
+									<br>
+									<li>Fill the Locker folder with the items you want to protect.</li>
+									<li>Open the FolderLocker file, because it's time to lock that folder up!</li>
+									<li>Type "Y" into the screen.</li>
+									<li>Click Enter, and the Folder Locker window will disappear, along with the Locker folder itself! Your secrets are safe!</li>
+									<p>To unlock the folder, double-click "FolderLocker" to open it.</p>
+									<li>Enter the password you entered in Step 8, and click Enter.</li>
+									<li>he Locker folder is back. You can open it to find your hidden files. Repeat Steps 17, 18 and 19 to lock the folder again.</li>
+								</ol>
+							</div>
+						</ul>
+
+
+
+						
+					</div>
+						<!--
+					<hr>
+					<article id="pendrive_write_protection">
+						<span>How to remove pen drive write protection</span>
+						<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
+						<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+					</article>
+					<hr>
+					<article id="win7_without_activation">
+						<span>How to use Windows 7 without activation</span>
+						<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
+						<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+					</article>
+					<hr>
+					<article id="hidden_folder">
+						<span>Make a super hidden folder in windows without any extra software</span>
+						<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
+						<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+					</article>-->
+				<!-- Footer -->
+					<footer id="footer">
+							<p class="copyright">&copy; iTECH |2019 All right reserved <img src="images/fbc_logo.png" style="width: 20px; height:20px; vertical-align: middle;"></p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/nav.js"></script>
+			<script src="assets/js/modal.js"></script>
+
+	</body>
+</html>

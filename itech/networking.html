@@ -1,0 +1,1041 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>iTECH</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/nav.css" />
+		<link rel="shortcut icon" href="images/itechlogo_v1.png" type="image/x-icon">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<div id="mySidenav" class="sidenav" style="font-size: 10px;">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<a href="index.html"><i style="font-size:24px" class="fa">&#xf015;</i></i>Home</a>
+					<a href="instructive_programming.html"><i style="font-size:24px" class="fa">&#xf1c9;</i>Instructive Programming</a></li>
+					<a href="networking.html"><i style="font-size:24px" class="fa">&#xf1eb;</i></i>Networking</a>
+					<a href="minigames.html"><i style="font-size:24px" class="fa">&#xf192;</i>Mini-games</a>
+					<a href="misc.html"><i class="fa fa-cogs" style="font-size:24px"></i>Miscellaneous</a>
+					<a href="about.html"><i style="font-size:24px" class="fa">&#xf2b9;</i>About</a>
+				</div>
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+								<span style="font-size:20px;cursor:pointer" onclick="openNav()"><img src="images/itechlogo_v1.png" style="height: 60px; width: 60px;"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>Networking</h1>
+								<p>If you think patience is a virtue, try surfing the net without high speed internet</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="network_components.html"> Network Components</a></li>
+								<li><a href="#categories_of_network"> Categories of Network</a></li>
+								<li><a href="#terms_in_networking"> Terms in Networking</a></li>
+								<li><a href="#network_protocols"> Network Protocols</a></li>
+								<li><a href="#osi"> &nbsp;7 Layers of OSI Models</a></li>
+								<li><a href="#ip_addressing"> IP Addressing</a></li>
+								<!--<li><a href="#elements">Elements</a></li>-->
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- network_components -->
+							<article id="categories_of_network">
+								<h2 class="major"> Categories of Network</h2>
+								<span class="image main"><img src="images/cloud.gif" style="width: 100%; height: 100%;" alt="" /></span>
+								<!--<input type="text" id="myInputJava" onkeyup="javasearch()" placeholder="Search for topics..">-->
+							<ul id="myULJava" style="list-style-type:none;"><br>
+							<h3>Networks Defined by Geography </h3>
+							<span class="image main"><img src="images/lanbg.jpg" alt="" /></span>
+							<p>As you might be sensing at this point, not all networks look the same. They vary in
+								numerous ways. One criterion by which we can classify networks is how geographically
+								dispersed the networks components are. For example, a network might interconnect
+								devices within an office, or a network might interconnect a database at a
+								corporate headquarters location with a remote sales office located on the opposite
+								side of the globe. </p>
+							<p>Based on the geographical dispersion of network components, networks can be classified
+								into various categories, including the following: </p>
+								<hr>
+								<ul>
+									<li><b style="color:red; font-family: rockwell;">Local-area network (LAN)</b></li>
+								</ul>
+							<span class="image main"><img src="images/lan1.jpg" alt="" /></span>
+							<p>A LAN interconnects network components within a local region (for example,
+								within a building). Examples of common LAN technologies you’re likely to encounter
+								include Ethernet (that is, IEEE 802.3) and wireless networks (that is, IEEE
+								802.11). Figure 1-2 illustrates an example of a LAN. </p><br>
+							<span class="image main"><img src="images/lan.png" alt="" /></span>
+							<hr>
+
+							<ul>
+								<li><b style="color:orange; font-family: rockwell;">Wide-area network (WAN) </b></li>
+							</ul>
+							<span class="image main"><img src="images/wan2.png" alt="" /></span>
+							<p>A WAN interconnects network components that are geographically separated. For
+								example, a corporate headquarters might have multiple WAN connections to remote
+								office sites. Multiprotocol Label Switching (MPLS), Asynchronous Transfer
+								Mode (ATM), and Frame Relay are examples of WAN technologies. Figure 1-3
+								depicts a simple WAN topology, which interconnects two geographically dispersed
+								locations. </p>
+							<span class="image main"><img src="images/wan.png" alt="" /></span>
+							<hr>
+							<h6>Other Categories of Networks </h6>
+							<p>Although LANs and WANs are the most common terms used to categorize computer
+								networks based on geography, other categories include campus-area network
+								(CAN), metropolitan-area network (MAN), and personal-area network (PAN). </p>
+							<ul>
+								<li><b style="color:yellow; font-family: rockwell;">Campus-area network (CAN) </b></li>
+							</ul>
+							<span class="image main"><img src="images/can.png" alt="" /></span>
+							<p>Years ago, I was a network manager for a university. The university covered several
+								square miles and had several dozen buildings. Within many of these buildings was
+								a LAN. However, those building-centric LANs were interconnected. By interconnecting
+								these LANs, another network type was created, a CAN. Besides an actual
+								university campus, a CAN might also be found in an industrial park or business
+								park. </p>
+							<ul>
+							<hr>
+								<li><b style="color:green; font-family: rockwell;">Metropolitan-area network (MAN) </b></li>
+							</ul>
+							<span class="image main"><img src="images/man1.jpg" alt="" /></span>
+							<p>More widespread than a CAN and less widespread than a WAN, a MAN interconnects
+									locations scattered throughout a metropolitan area. Imagine, for example, that
+									a business in Chicago had a location near O’Hare Airport, another location near
+									the Navy Pier, and another location in the Sears Tower. If a service provider could
+									interconnect those locations using a high-speed network, such as a 10-Gbps (that
+									is, 10 billion bits per second) network, the interconnection of those locations would
+									constitute a MAN. One example of a MAN technology is Metro Ethernet. </p>
+							<hr>	
+							<ul>
+								<li><b style="color:blue; font-family: rockwell;">Personal-area network (PAN)  </b></li>
+							</ul>
+							<span class="image main"><img src="images/pan1.png" alt="" /></span>
+							<p>A PAN is a network whose scale is even smaller than a LAN. As an example, a connection
+									between a PC and a digital camera via a universal serial bus (USB) cable
+									could be considered a PAN. Another example is a PC connected to an external
+									hard drive via a FireWire connection. A PAN, however, is not necessarily a wired
+									connection. A Bluetooth connection between your cell phone and your car’s audio
+									system is considered a wireless PAN (WPAN). The main distinction of a PAN,
+									however, is that its range is typically limited to just a few meters. </p>
+							<hr>
+							<h4>Networks Defined by Topology </h4>
+							<p>In addition to classifying networks based on the geographical placement of their
+									components, another approach to classifying a network is to use the network’s
+									topology. Looks can be deceiving, however. You need to be able to distinguish between
+									a physical topology and a logical topology. </p><br>
+									<br>
+							<h4>Physical Versus Logical Topology </h4>
+							<p>Just because a network appears to be a star topology (that is, where the network
+									components all connect back to a centralized device, such as a switch), the traffic
+									might be flowing in a circular pattern through all the network components attached
+									to the centralized device. The actual traffic flow determines the logical topology , while
+									how components are physically interconnected determines the physical topology . </p>
+							<p>As an example, consider Figure 1-4 . The figure shows a collection of computers
+									connected to a Token Ring Media Access Unit (MAU). From a quick inspection
+									of Figure 1-4 , you can conclude that the devices are physically connected in a star
+									topology, where the connected devices radiate out from a centralized aggregation
+									point (that is, the MAU in this example). </p>
+							<span class="image main"><img src="images/star.png" alt="" /></span>
+							<h6><b>Figure 1-4</b>&nbsp;Physical Star Topology </h6>
+							<p>Next, contrast the physical topology in Figure 1-4 with the logical topology illustrated
+									in Figure 1-5 . Although the computers physically connect to a centralized
+									MAU, when you examine the flow of traffic through (or in this case, around) the
+									network, you see that the traffic flow actually loops round-and-round the network.
+									The traffic flow dictates how to classify a network’s logical topology. In this instance,
+									the logical topology is a ring topology , because the traffic circulates around the
+									network as if circulating around a ring. 
+							</p>
+							<span class="image main"><img src="images/star.png" alt="" /></span>
+							<h6><b>Figure 1-5 </b>&nbsp;Logical Ring Topology</h6>
+							<p>Although Token Ring, as used in this example, is rarely seen in modern networks, it
+									illustrates how a network’s physical and logical topologies can be quite different. </p>
+									<br><br>
+							<h4>Bus Topology </h4>
+							<p>A bus topology, as depicted in Figure 1-6 , typically uses a cable running through the
+									area requiring connectivity. Devices that need to connect to the network then tap
+									into this nearby cable. Early Ethernet networks commonly relied on bus topologies. </p>
+							<span class="image main"><img src="images/bus.png" alt="" /></span>
+							<h6><b>Figure 1-6 </b>&nbsp;Bus Topology </h6>
+							<p>A network tap might be in the form of a T connector (commonly used in older
+									10BASE2 networks) or a vampire tap (commonly used in older 10BASE5 networks).
+									Figure 1-7 shows an example of a T connector. </p>
+							<span class="image main"><img src="images/t_connector.png" alt="" /></span>
+							<h6><b>Figure 1-7 </b>&nbsp;T Connector</h6>
+							<blockquote><b>NOTE</b> The Ethernet standards mentioned here (that is, 10BASE2 and 10BASE5), in
+									addition to many other Ethernet standards, are discussed in detail in Chapter 4 , “Understanding
+									Ethernet.” </blockquote>
+							<p>A bus and all devices connected to that bus make up a network segment . As discussed
+									in Chapter 4 , a single network segment is a single collision domain, which means
+									that all devices connected to the bus might try to gain access to the bus at the same
+									time, resulting in an error condition known as a collision . Table 1-1 identifies some
+									of the primary characteristics, benefits, and drawbacks of a bus topology. </p>
+									<h3 class="major">Table 1-1 </h3>
+									<h4>Characteristics, Benefits, and Drawbacks of a Bus Topology</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Characteristics</th>
+													<th>Benefits</th>
+													<th>Drawbacks</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>To maintain appropriate
+															electrical characteristics of
+															the cable, the cable requires
+															a terminator (of a specific
+															resistance) at each end of the
+															cable. </td>
+													<td>Depending on the media used
+															by the bus, a bus topology can
+															be less expensive. </td>
+													<td>Troubleshooting a bus
+															topology can be difficult
+															because problem isolation
+															might necessitate an inspection
+															of multiple network taps to
+															make sure they either have a
+															device connected or they are
+															properly terminated. </td>
+												</tr>
+												<tr>
+													<td>Bus topologies were popular
+															in early Ethernet networks.</td>
+													<td>Installation of a network based
+															on a bus topology is easier
+															than some other topologies,
+															which might require extra
+															wiring to be installed. </td>
+													<td>Adding devices to a bus might
+															cause an outage for other users
+															on the bus. 
+															</td>
+												</tr>
+												<tr>
+													<td>Network components tap
+															directly into the cable via
+															a connector such as a T
+															connector or a vampire tap.</td>
+													<td> </td>
+													<td>An error condition existing
+															on one device on the bus can
+															impact performance of other
+															devices on the bus. </td>
+												</tr>
+												<tr>
+													<td></td>
+													<td></td>
+													<td>A bus topology does not scale
+															well, because all devices share
+															the bandwidth available on the
+															bus. Also, if two devices on
+															the bus simultaneously request
+															access to the bus, an error
+															condition results. </td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<h4><b>Ring Topology</b></h4>
+									<p>Figure 1-8 offers an example of a ring topology, where traffic flows in a circular
+											fashion around a closed network loop (that is, a ring). Typically, a ring topology
+											sends data, in a single direction, to each connected device in turn, until the intended
+											destination receives the data. Token Ring networks typically relied on a ring topology, although the ring might have been the logical topology, while physically, the
+											topology was a star topology. </p>
+											<img src="images/ring.png" style="height: 200px; width:245px;">
+											<p><b>Figure 1-8 </b>&nbsp;&nbsp;Ring Topology </p>
+										<p>Token Ring, however, was not the only popular ring-based topology popular in networks back in the 1990s. Fiber Distributed Data Interface (FDDI) was another variant of a ring-based topology. Most FDDI networks (which, as the name suggests,
+												have fiber optics as the media) used not just one ring, but two. These two rings
+												sent data in opposite directions, resulting in counter-rotating rings . One benefit of
+												counter-rotating rings was that if a fiber broke, the stations on each side of the break
+												could interconnect their two rings, resulting in a single ring capable of reaching all
+												stations on the ring. </p>
+										<p>Because a ring topology allows devices on the ring to take turns transmitting on the
+												ring, contention for media access was not a problem, as it was for a bus topology. If
+												a network had a single ring, however, the ring became a single point of failure. If the
+												ring were broken at any point, data would stop flowing. Table 1-2 identifies some of
+												the primary characteristics, benefits, and drawbacks of a ring topology. 
+												</p>
+												<h3 class="major">Table 1-2 </h3>
+												<h4>Characteristics, Benefits, and Drawbacks of a Ring Topology </h4>
+												<div class="table-wrapper">
+														<table>
+															<thead>
+																<tr>
+																	<th>Characteristics</th>
+																	<th>Benefits</th>
+																	<th>Drawbacks</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>Devices are interconnected by
+																			connecting to a single ring,
+																			or in some cases (for example,
+																			FDDI), a dual ring. </td>
+																	<td>A dual ring topology adds
+																			a layer of fault tolerance.
+																			Therefore, if a cable break
+																			occurred, connectivity to all
+																			devices could be restored. 
+																			</td>
+																	<td>A break in a ring when a single
+																			ring topology is used results
+																			in a network outage for all
+																			devices connected to the ring. </td>
+																</tr>
+																<tr>
+																	<td>Each device on a ring
+																			includes both a receiver (for
+																			the incoming cable) and a
+																			transmitter (for the outgoing
+																			cable) </td>
+																	<td>Troubleshooting is simplified
+																			in the event of a cable break,
+																			because each device on a ring
+																			contains a repeater. When the
+																			repeater on the far side of a
+																			cable break doesn’t receive any
+																			data within a certain amount
+																			of time, it reports an error
+																			condition (typically in the
+																			form of an indicator light on a
+																			network interface card [NIC]).</td>
+																	<td>Rings have scalability
+																			limitations. Specifically, a ring
+																			has a maximum length and a
+																			maximum number of attached
+																			stations. Once either of these
+																			limits is exceeded, a single ring
+																			might need to be divided into
+																			two interconnected rings. A
+																			network maintenance window
+																			might need to be scheduled to
+																			perform this ring division. 
+																			</td>
+																</tr>
+																<tr>
+																	<td>Each device on the ring
+																			repeats the signal it receives. </td>
+																	<td> </td>
+																	<td>Because a ring must be a
+																			complete loop, the amount
+																			of cable required for a ring
+																			is usually higher than the
+																			amount of cable required for a
+																			bus topology serving the same
+																			number of devices. </td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+													<h4>Star Topology </h4>
+													<p>Figure 1-9 shows a sample star topology with a hub at the center of the topology
+															and a collection of clients individually connected to the hub. Notice that a star topology
+															has a central point from which all attached devices radiate. In LANs, that
+															centralized device was typically a hub back in the early 1990s. Modern networks,
+															however, usually have a switch located at the center of the star. </p>
+													<span class="image main"><img src="images/star.png" alt="" /></span>
+													<h6><b>Figure 1-9 </b>&nbsp;Star Topology  </h6>
+													<p>The star topology is the most popular physical LAN topology in use today, with an
+															Ethernet switch at the center of the star and unshielded twisted-pair cable (UTP)
+															used to connect from the switch ports to clients. 
+													</p>
+													<p>Table 1-3 identifies some of the primary characteristics, benefits, and drawbacks of a
+															star topology.</p>
+															<h5><b>Table 1-3</b>&nbsp;Characteristics, Benefits, and Drawbacks of a Star Topology</h5>
+															<div class="table-wrapper">
+																	<table>
+																		<thead>
+																			<tr>
+																				<th>Characteristics</th>
+																				<th>Benefits</th>
+																				<th>Drawbacks</th>
+																			</tr>
+																		</thead>
+																		<tbody>
+																			<tr>
+																				<td>Devices have independent
+																						connections back to a central
+																						device (for example, a hub or
+																						a switch).  </td>
+																				<td>A cable break only impacts
+																						the device connected via the
+																						broken cable, and not the
+																						entire topology. </td>
+																				<td>More cable is required for a
+																						star topology, as opposed to
+																						bus or ring topologies, because
+																						each device requires its own
+																						cable to connect back to the
+																						central device. </td>
+																			</tr>
+																			<tr>
+																				<td>Star topologies are commonly
+																						used with Ethernet
+																						technologies.</td>
+																				<td>Troubleshooting is relatively
+																						simple, because a central
+																						device in the star topology acts
+																						as the aggregation point of all
+																						the connected devices.  </td>
+																				<td>Installation can take longer
+																						for a star topology, as opposed
+																						to a bus or ring topology,
+																						because more cable runs that
+																						must be installed. 
+																				</td>
+																			</tr>
+																		</tbody>
+																	</table>
+																</div>
+							</article>
+
+							<!-- hardware -->
+							<article id="terms_in_networking">
+									<h2 class="major">Terms in Networking</h2>
+									<span class="image main"><img src="images/OnlyAssuredCoati-max-1mb.gif" alt="" /></span>
+									<p><strong>What comes to mind when you think of a </strong><strong style="color:red;">computer network?</strong> <strong style="color:orange;">Is it the Internet?</strong>
+										<strong style="color:yellow;">Is it e-mail?</strong><strong> Is it the wireless connection that lets you print to your printer from
+										your laptop?</strong> </p>
+										<span class="image main"><img src="images/find.jpeg" alt="" /></span>
+									<p>&nbsp;&nbsp;&nbsp;Whatever your current perception of a computer network, this chapter 
+										helps you gain deep appreciation and understanding of networked
+										computing. Be aware that although we commonly think of computer
+										networks as interconnecting computers, today, computer networks interconnect
+										a variety of devices in addition to just computers. <br>Examples include game consoles,
+										video-surveillance devices, and IP-based telephones. Therefore, throughout
+										this, you can think of the term computer network as being synonymous
+										with the more generic term network , as these terms will be used interchangeably. 
+									</p>
+									<p>&nbsp;&nbsp;&nbsp;In this chapter, the goal is to acquaint you with the purpose of a network and
+										help you categorize a given network based on criteria such as geography, topology,
+										and the location of a network’s resources.</p><br>
+										<hr>
+									<h3>Defining a Network</h3>
+										<blockquote>It was in the movie A Field of Dreams where they said, “If you build it, they will
+												come.” That phrase most certainly applies to the evolution of network-based services
+												seen in modern-day networks. Computer networks are no longer relegated to
+												allowing a group of computers to access a common set of files stored on a computer
+												designated as a file server . Instead, with the building of high-speed, highly redundant
+												networks, network architects are seeing the wisdom of placing a variety of traffic
+												types on a single network. Examples include voice and video, in addition to data. <br><br>
+												One could argue that a network is the sum of its parts. So, as you begin your study
+												of networking, you should grasp a basic understanding of fundamental networking
+												components. These components include such entities as a client, server, hub, switch,
+												router, and the media used to interconnect these devices. </blockquote>
+									<h4>The Purpose of Networks </h4>
+									<p>At its essence, a network’s purpose is to make connections. These connections might
+											be between a PC and a printer or between a laptop and the Internet, as just a couple
+											of examples. However, the true value of a network comes from the traffic flowing
+											over those connections. Consider a sampling of applications that can travel over a
+											network’s connections: </p>
+											<ul>
+												<li> <b>File sharing between two computers </b></li>
+												<li> <b>Video chatting between computers located in different parts of the world  </b></li>
+												<li> <b>Surfing the web (for example, to use social media sites, watch streaming video,
+														listen to an Internet radio station, or do research for a school term paper)  </b></li>
+												<li> <b>Instant messaging (IM) between computers with IM software installed </b></li>
+												<li> <b>E-mail </b></li>
+												<li> <b>Voice over IP (VoIP), to replace traditional telephony systems </b></li>
+											</ul>
+											<p>A term commonly given to a network transporting multiple types of traffic (for
+													example, voice, video, and data) is a <b style="color:red;">converged network</b> . A converged network might
+													offer significant cost savings to organizations that previously supported separate network
+													infrastructures for voice, data, and video traffic. This convergence can also potentially
+													reduce staffing costs, because only a single network needs to be maintained,
+													rather than separate networks for separate traffic types. </p>
+													<hr>
+											<h4>Internet</h4>
+											<blockquote>
+													The Internet, sometimes called simply "the Net," is a worldwide system of computer networks -- a network of networks in which users at any one computer can, if they have permission, get information from any other computer (and sometimes talk directly to users at other computers).
+											</blockquote>
+											<h4>Connection</h4>
+											<blockquote>
+													In networking, a connection refers to pieces of related information that are transfered through a network. This generally infers that a connection is built before the data transfer (by following the procedures laid out in a protocol) and then is deconstructed at the at the end of the data transfer.
+											</blockquote>
+											<h4>Packet</h4>
+											<blockquote>
+													A packet is, generally speaking, the most basic unit that is transfered over a network. When communicating over a network, packets are the envelopes that carry your data (in pieces) from one end point to the other.
+											</blockquote>
+											<h4>Network Interface</h4>
+											<blockquote>
+													A network interface can refer to any kind of software interface to networking hardware. For instance, if you have two network cards in your computer, you can control and configure each network interface associated with them individually.
+											</blockquote>
+											<h4>LAN</h4>
+											<blockquote>
+													LAN stands for “local area network”. It refers to a network or a portion of a network that is not publicly accessible to the greater internet. A home or office network is an example of a LAN.
+											</blockquote>
+											<h4>WAN</h4>
+											<blockquote>
+													WAN stands for “wide area network”. It means a network that is much more extensive than a LAN. While WAN is the relevant term to use to describe large, dispersed networks in general, it is usually meant to mean the internet, as a whole.
+											</blockquote>
+											<h4>Protocol</h4>
+											<blockquote>
+													A protocol is a set of rules and standards that basically define a language that devices can use to communicate. There are a great number of protocols in use extensively in networking, and they are often implemented in different layers.
+											</blockquote>
+											<h4>Port</h4>
+											<blockquote>
+													A port is an address on a single machine that can be tied to a specific piece of software. It is not a physical interface or location, but it allows your server to be able to communicate using more than one application.
+											</blockquote>
+											<h4>Firewall</h4>
+											<blockquote>
+													A firewall is a program that decides whether traffic coming into a server or going out should be allowed. A firewall usually works by creating rules for which type of traffic is acceptable on which ports. Generally, firewalls block ports that are not used by a specific application on a server.
+											</blockquote>
+											<h4>NAT</h4>
+											<blockquote>
+													NAT stands for network address translation. It is a way to translate requests that are incoming into a routing server to the relevant devices or servers that it knows about in the LAN. This is usually implemented in physical LANs as a way to route requests through one IP address to the necessary backend servers.
+											</blockquote>
+											<h4>VPN</h4>
+											<blockquote>
+													VPN stands for virtual private network. It is a means of connecting separate LANs through the internet, while maintaining privacy. This is used as a means of connecting remote systems as if they were on a local network, often for security reasons.
+											</blockquote>
+											<h4>Application</h4>
+											<blockquote>
+													The application layer is the layer that the users and user-applications most often interact with. Network communication is discussed in terms of availability of resources, partners to communicate with, and data synchronization.
+											</blockquote>
+											<h4>Presentation</h4>
+											<blockquote>
+													The presentation layer is responsible for mapping resources and creating context. It is used to translate lower level networking data into data that applications expect to see.
+											</blockquote>
+											<h4>Session</h4>
+											<blockquote>
+													The session layer is a connection handler. It creates, maintains, and destroys connections between nodes in a persistent way.
+											</blockquote>
+											<h4>Transport</h4>
+											<blockquote>
+													The transport layer is responsible for handing the layers above it a reliable connection. In this context, reliable refers to the ability to verify that a piece of data was received intact at the other end of the connection
+											</blockquote>
+											<h4>Network</h4>
+											<blockquote>
+													The network layer is used to route data between different nodes on the network. It uses addresses to be able to tell which computer to send information to. This layer can also break apart larger messages into smaller chunks to be reassembled on the opposite end.
+											</blockquote>
+											<h4>Data Link</h4>
+											<blockquote>
+													This layer is implemented as a method of establishing and maintaining reliable links between different nodes or devices on a network using existing physical connections.
+											</blockquote>
+											<h4>Physical</h4>
+											<blockquote>
+													The physical layer is responsible for handling the actual physical devices that are used to make a connection. This layer involves the bare software that manages physical connections as well as the hardware itself (like Ethernet).
+											</blockquote>
+
+								</article>
+
+								<!-- hardware -->
+								<article id="network_protocols">
+									<h2 class="major">Network Protocols</h2>
+									<span class="image main"><img src="images/network_protocols.jpg" alt="" /></span>
+									<p>On going development..</p>
+								</article>
+								<!-- hardware -->
+								
+
+								<article id="osi">
+										<h2 class="major">The OSI Model </h2>
+										<span class="image main"><img src="images/osi.png" alt="" /></span>
+										<strong> The OSI model is comprised of seven layers: 
+										</strong>
+										<ul>
+											<li><b>Layer 1:</b><strong style="color:violet;">&nbsp;The physical layer</strong> </li>
+											<li><b>Layer 2:</b><strong style="color:red;">&nbsp;The data link layer </strong></li>
+											<li><b>Layer 3:</b><strong style="color:orange;">&nbsp;The network layer</strong> </li>
+											<li><b>Layer 4:</b><strong style="color:yellow;">&nbsp;The transport layer</strong></li>
+											<li><b>Layer 5:</b><strong style="color:green;">&nbsp;The session layer </strong></li>
+											<li><b>Layer 6:</b><strong style="color:skyblue;">&nbsp;The presentation layer </strong></li>
+											<li><b>Layer 7:</b><strong style="color:blue;">&nbsp;The application layer </strong></li>
+										</ul>
+										<p>Various mnemonics are available to help memorize these layers in their proper order.
+												A top-down (that is, starting at the top of the stack with Layer 7 and working
+												your way down to Layer 1) acrostic is All People Seem To Need Data Processing . As a
+												couple of examples, using this acrostic, the A in A ll reminds us of the A in A pplication,
+												and the P in P eople reminds us of the P in P resentation. 
+										</p><br>
+										<p>At the physical layer, binary expressions (that is, a series of 1s and 0s) represent data.
+												A binary expression is made up of bits, where a bit is a single 1 or a single 0. At upper
+												layers, however, bits are grouped together, into what is known as a protocol data
+												unit (PDU) or a data service unit . 
+										</p><br>
+										<p>The term packet is used fairly generically to refer to these PDUs. However, PDUs
+												might have an additional name, depending on their OSI layer. Figure 2-3 illustrates
+												these PDU names. A common memory aid for these PDUs is the acrostic Some
+												People Fear Birthdays , where the S in S ome reminds us of the S in S egments. The P
+												in P eople reminds us of the P in P ackets, and the F in F ear reflects the F in F rames.
+												Finally, the B in B irthdays reminds us of the B in B its. 
+										</p><br>
+										<h2>Layer 1: The Physical Layer </h2>
+										<p>The physical layer, as shown in Figure 2-4 , is concerned with the transmission of
+												data on the network. </p>
+										<span class="image main"><img src="images/physicallayer.png" alt="" /></span>
+										<h6><b>Figure 2-4 </b> &nbsp;Layer 1: The Physical Layer </h6>
+										<p>As a few examples, the physical layer defines </p>
+										<ul>
+											<li><b>How bits are represented on the medium: </b>Data on a computer network is
+												represented as a binary expression. Chapter 5 , “Working with IP Addresses,”
+												discusses binary in much more detail. Electrical voltage (on copper wiring) or
+												light (carried via fiber-optic cabling) can represent these 1s and 0s.
+												<br>
+												<br>
+												For example, the presence or the absence of voltage on a wire can represent a
+												binary 1 or a binary 0, respectively, as illustrated in Figure 2-5 . Similarly, the
+												presence or absence of light on a fiber-optic cable can represent a 1 or 0 in
+												binary. This type of approach is called current state modulation . 
+												</li>
+										</ul>
+										<span class="image main"><img src="images/Current State Modulation.png" alt="" /></span>
+										<h6><b>Figure 2-5 </b>Current State Modulation </h6>
+										<br>
+										<p>An alternate approach to representing binary data is state transition modulation ,
+												as shown in Figure 2-6 , where the transition between voltages or the presence
+												of light indicates a binary value. </p>
+										<span class="image main"><img src="images/Transition Modulation.png" alt="" /></span>
+										<h6><b>Figure 2-6 </b>Transition Modulation </h6>
+										<br>
+									</article>
+								<!--<h5>Try Online Compiler</h5> 
+								<button><a href="https://www.tutorialspoint.com/compile_java_online.php" style="text-decoration:none;">Online Compiler</a></button>
+							 <iframe class="yt"
+							width="560"
+							height="315"
+							src="https://www.youtube.com/embed/cNwEVYkx2Kk"
+							srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/cNwEVYkx2Kk?autoplay=1><img src=https://img.youtube.com/vi/cNwEVYkx2Kk/hqdefault.jpg alt='Introduction to Networking | Network Fundamentals Part 1 - Network Direction'><span>▶</span></a>"
+							frameborder="0"
+							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen
+							title="Introduction to Networking | Network Fundamentals Part 1 - Network Direction">
+							
+							</ul>
+							<li style="list-style:none;"><span id="Introducing_Computer_Networks" style="font-size: 25px; font-family: rockwell, Times New Roman;">Introducing Computer Networks<br></span>
+							
+							</iframe>
+							
+								<p>What comes to mind when you think of a computer network? Is it the Internet?
+								Is it e-mail? Is it the wireless connection that lets you print to your printer from
+								your laptop? </p><img src="images/OnlyAssuredCoati-max-1mb.gif" style="width: 200px; height: 200px;"/>
+								<br>
+								
+								Whatever your current perception of a computer network, this chapter and 
+								as a whole, helps you gain deep appreciation and <strong>understanding of networked computing</strong>. Be aware that although we commonly think of computer
+								networks as interconnecting computers, today, computer networks interconnect
+								a variety of devices in addition to just computers. Examples include game consoles, <b style="color:red;">video-surveillance devices</b>, and <b style="color:orange;">IP-based telephones</b>. Therefore, 
+								throughout this, you can think of the term computer network as being synonymous
+								with the more generic term network , as these terms will be used interchangeably.
+								In this chapter, the goal is to acquaint you with the purpose of a network and
+								help you categorize a given network based on criteria such as geography, topology, and the location of a network’s resources. An implied goal of this and all
+								other chapters in this book is to prepare you to successfully pass the CompTIA
+								Network+ exam, which is considered to be a cornerstone exam in the information technology (IT) industry. 
+							<hr>
+								<h3>Defining a Network</h3>
+								<p>It was in the movie A Field of Dreams where they said, <i>“If you build it, they will
+									come.”</i> That phrase most certainly applies to the evolution of network-based services seen in modern-day networks. Computer networks are no longer relegated to
+									allowing a group of computers to access a common set of files stored on a computer
+									designated as a file server . Instead, with the building of high-speed, highly redundant
+									networks, network architects are seeing the wisdom of placing a variety of traffic
+									types on a single network. <strong>include voice and video, in addition to data.</strong>  </p>
+								<p>One could argue that a network is the sum of its parts. So, as you begin your study
+									of networking, you should grasp a basic understanding of fundamental networking
+									components. These components include such entities as a <b style="color:red;">client</b>, <b style="color:orange;">server</b>, <b style="color:yellow;">hub</b>, <b style="color:green;"></b>,
+									<b style="color:lightblue;">router</b>, and <strong>the media used to interconnect these devices. </strong></p>
+								<h4>The Purpose of Networks</h4>
+								At its essence, a network’s purpose is to make connections. These connections might
+								be between a PC and a printer or between a laptop and the Internet, as just a couple
+								of examples. However, the true value of a network comes from the traffic flowing
+								over those connections. Consider a sampling of applications that can travel over a
+								network’s connections: 
+								<ul>
+									<li>File sharing between two computers</li>
+									<li>Video chatting between computers located in different parts of the world </li>
+									<li>Surfing the web (for example, to use social media sites, watch streaming video,
+										listen to an Internet radio station, or do research for a school term paper) </li>
+									<li>Instant messaging (IM) between computers with IM software installed </li>
+									<li>E-mail</li>
+									<li>Voice over IP (VoIP), to replace traditional telephony systems</li>
+								</ul>
+								<p>A term commonly given to a network transporting multiple types of traffic (for
+								example, voice, video, and data) is a converged network . A converged network might
+								offer significant cost savings to organizations that previously supported separate network infrastructures for voice, data, and video traffic. This convergence can also potentially reduce staffing costs, because only a single network needs to be maintained,
+								rather than separate networks for separate traffic types. </p>
+								<h4>Overview of Network Components</h4>
+								<p>Designing, installing, administering, and troubleshooting a network requires the
+									ability to recognize various network components and their functions. Although this
+									is the focus of Chapter 3 , “Identifying Network Components,” before we can proceed much further, we need a basic working knowledge of how individual components come together to form a functioning network. 
+								</p>
+								<p>The components to consider for now are client, server, hub, switch, router, media,
+									and wide-area network (WAN) link. As a reference for this discussion, consider
+									Figure 1-1 </p>
+									<img id="myImg" src="images/sample_computer_network.png" alt="Snow" style="width:100%;max-width:300px">
+
+
+								<p>The following list describes the network components depicted in Figure 1-1 and the
+									functions they serve: </p>
+									<ul>
+										<li>
+											<b style="color: rgb(178, 32, 32)">Client</b>: The term client defines the device an end user uses to access a network.
+											This device might be a workstation, laptop, smartphone with wireless capabilities, or a variety of other end-user terminal devices. 
+										</li>
+										<li>
+											<b style="color: rgb(255, 60, 0)">Server</b>: A server , as the name suggests, serves up resources to a network. These
+											resources might include e-mail access as provided by an e-mail server, web
+											pages as provided by a web server, or files available on a file server. 
+										</li>
+										<li>
+											<b style="color: rgb(233, 210, 0)">Hub</b>: A hub is an older technology that interconnects network components,
+											such as clients and servers. Hubs vary in their number of available ports. However, for scalability, hubs can be interconnected, up to a point. If too many
+											hubs are chained together, network errors can result. As discussed further
+											in Chapter 3 , a hub does not perform any inspection of the traffic it passes. 
+											Rather, a hub simply receives traffic in a port (that is, a receptacle to which a
+											network cable connects) and repeats that traffic out all of the other ports. <br>
+											<button style="width: 150px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">Hub</button>
+										</li>
+										<li>
+											<b style="color: rgb(255, 230, 0)">Switch</b>: Like a hub, a switch interconnects network components, and they are
+											available with a variety of port densities. However, unlike a hub, a switch does
+											not simply take traffic in on one port and blast that traffic out all other ports.
+											Rather, a switch learns which devices reside off of which ports. As a result,
+											when traffic comes in a switch port, the switch interrogates the traffic to see
+											where it is destined. Then, based on what the switch has learned, the switch
+											forwards the traffic out of the appropriate port, and not out all of the other
+											ports. This dramatically cuts down on the volume of traffic coursing through
+											your network. A switch is considered a Layer 2 device, which means that it
+											makes its forwarding decisions based on addresses that are physically burned
+											into a network interface card (NIC) installed in a host (that is, any device that
+											transmits or receives traffic on a network). This burned-in address is a Media
+											Access Control (MAC) address.<br>
+											<button style="width: 150px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">Switch</button>
+										</li>
+										<li>
+											<b style="color: rgb(238, 255, 0)">Router</b>: As discussed in Chapter 3 , a router is considered to be a Layer 3 device,
+											which means that it makes its forwarding decisions based on logical network
+											addresses. Most modern networks use Internet Protocol (IP) addressing. Therefore, most routers know what logical IP networks reside off of which router
+											interfaces. Then, when traffic comes into a router, the router examines the
+											destination IP address of the traffic and, based on the router’s database of networks (that is, the routing table), the router intelligently forwards the traffic
+											out the appropriate interface.<br>
+											<button style="width: 150px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">Router</button>
+										</li>
+										<li>
+											<b style="color: rgb(179, 255, 0)">Media</b>: The previously mentioned devices need to be interconnected via some
+											sort of media . This media could be copper cabling. It could be a fiber-optic
+											cable. Media might not even be a cable, as is the case with wireless networks,
+											where radio waves travel through the media of air. Chapter 3 expands on this
+											discussion of media. For now, realize that media varies in its cost, bandwidth
+											capacity, and distance limitation. For example, although fiber-optic cabling
+											is more expensive than unshielded twisted-pair cabling, it can typically carry
+											traffic over longer distances and has a greater bandwidth capacity (that is, the
+											capacity to carry a higher data rate). 
+										</li>
+										<li>
+											<b style="color: rgb(72, 255, 0)">WAN link</b>: Today, most networks connect to one or more other networks.
+											For example, if your company has two locations, and those two locations are
+											interconnected (perhaps via a Frame Relay or Multiprotocol Label Switching [MPLS] network), the link that interconnects those networks is typically
+											referred to as a wide-area network (WAN) link. WANs, and technologies
+											supporting WANs , “Introducing Wide-Area
+											Networks.” 
+										</li>
+									</ul>
+									<h3>Networks Defined by Geography</h3>
+									<p>As you might be sensing at this point, not all networks look the same. They vary in
+											numerous ways. One criterion by which we can classify networks is how geographically dispersed the networks components are. For example, a network might interconnect devices within an office, or a network might interconnect a database at a
+											corporate headquarters location with a remote sales office located on the opposite
+											side of the globe. </p>
+									<p>Based on the geographical dispersion of network components, networks can be classified into various categories, including the following: </p>
+									<ul>
+										<li style="list-style: none;">■ <a href="#lan">Local-area network (LAN)</a> </li>
+										<li style="list-style: none;">■ <a href="#wan">Wide-area network (WAN) </a> </li>
+										<li style="list-style: none;">■ <a href="#can">Campus-area network (CAN) </a> </li>
+										<li style="list-style: none;">■ <a href="#man">Metropolitan-area network (MAN) </a></li>
+										<li style="list-style: none;">■ <a href="#pan">Personal-area network (PAN) </a></li>
+									</ul><br>
+									<p>The following sections describe these different classifications of networks in more
+											detail. </p>
+										<h3 id="lan"><b>LAN</b></h3>
+										<p>A LAN interconnects network components within a local region (for example,
+												within a building). Examples of common LAN technologies you’re likely to encounter include Ethernet (that is, IEEE 802.3) and wireless networks (that is, IEEE
+												802.11). Figure 1-2 illustrates an example of a LAN. </p>
+											<img id="networkClassifications" src="images/lan.png" style="width: 240px; height: 200px;">
+											<p><b>Figure 1-2</b>&nbsp;&nbsp;Sample Lan Topology </p>
+											<blockquote>NOTE IEEE stands for the Institute of Electrical and Electronics Engineers , and it is an
+													internationally recognized standards body. </blockquote>
+											<h3 id="wan"><b>WAN</b></h3>
+											A WAN interconnects network components that are geographically separated. For
+											example, a corporate headquarters might have multiple WAN connections to remote office sites. Multiprotocol Label Switching (MPLS), Asynchronous Transfer
+											Mode (ATM), and Frame Relay are examples of WAN technologies. Figure 1-3
+											depicts a simple WAN topology, which interconnects two geographically dispersed
+											locations. 
+											<img src="images/wan.png" style="width: 240px; height: 215px;">
+											<p><b>Figure 1-3</b>&nbsp;&nbsp;Sample Wan Topology </p>
+											<h3><b>Other Categories of networks</b></h3>
+
+												<p>Although LANs and WANs are the most common terms used to categorize computer networks based on geography, other categories include campus-area network
+														(CAN), metropolitan-area network (MAN), and personal-area network (PAN). </p>
+											<h3 id="can"><b>CAN</b></h3>
+											<blockquote>
+											<p>Years ago, I was a network manager for a university. The university covered several
+											square miles and had several dozen buildings. Within many of these buildings was
+											a LAN. However, those building-centric LANs were interconnected. By interconnecting these LANs, another network type was created, a CAN. Besides an actual
+											university campus, a CAN might also be found in an industrial park or business
+											park. </p></blockquote>
+											
+											<h3 id="man"><b>MAN</b></h3><blockquote>
+											<p>More widespread than a CAN and less widespread than a WAN, a MAN interconnects locations scattered throughout a metropolitan area. Imagine, for example, that
+											a business in Chicago had a location near O’Hare Airport, another location near
+											the Navy Pier, and another location in the Sears Tower. If a service provider could
+											interconnect those locations using a high-speed network, such as a 10-Gbps (that
+											is, 10 billion bits per second) network, the interconnection of those locations would
+											constitute a MAN. One example of a MAN technology is Metro Ethernet. </p>
+										</blockquote>
+											<h3 id="pan"><b>PAN</b></h3><blockquote>
+											<p>A PAN is a network whose scale is even smaller than a LAN. As an example, a connection between a PC and a digital camera via a universal serial bus (USB) cable
+											could be considered a PAN. Another example is a PC connected to an external
+											hard drive via a FireWire connection. A PAN, however, is not necessarily a wired
+											connection. A Bluetooth connection between your cell phone and your car’s audio
+											system is considered a wireless PAN (WPAN). The main distinction of a PAN,
+											however, is that its range is typically limited to just a few meters. </p>
+										</blockquote>
+										
+											<h3><b>Networks Defined by Topology</b></h3>
+												<p>In addition to classifying networks based on the geographical placement of their
+														components, another approach to classifying a network is to use the network’s
+														topology. Looks can be deceiving, however. You need to be able to distinguish between a physical topology and a logical topology.
+													 </p>
+											<h4><b>Physical Versus Logical Topology</b></h4>
+											<p>Just because a network appears to be a star topology (that is, where the network
+													components all connect back to a centralized device, such as a switch), the traffic
+													might be flowing in a circular pattern through all the network components attached
+													to the centralized device. The actual traffic flow determines the logical topology , while
+													how components are physically interconnected determines the physical topology . 
+												</p>
+											<img src="images/star.png" style="height: 200px; width:240px;">
+											<p><b>Figure 1-4</b>&nbsp;&nbsp;Physical Star Topology </p>
+												<p>Next, contrast the physical topology in Figure 1-4 with the logical topology illustrated in Figure 1-5 . Although the computers physically connect to a centralized
+														MAU, when you examine the flow of traffic through (or in this case, around) the
+														network, you see that the traffic flow actually loops round-and-round the network.
+														The traffic flow dictates how to classify a network’s logical topology. In this instance, the logical topology is a ring topology , because the traffic circulates around the
+														network as if circulating around a ring. </p>
+												<p>Although Token Ring, as used in this example, is rarely seen in modern networks, it
+														illustrates how a network’s physical and logical topologies can be quite different. </p>
+											<h4><b>Bus Topology</b></h4>
+													<p>A bus topology, as depicted in Figure 1-6 , typically uses a cable running through the
+															area requiring connectivity. Devices that need to connect to the network then tap
+															into this nearby cable. Early Ethernet networks commonly relied on bus topologies. 
+													</p>
+											<img src="images/bus.png" style="height: 200px; width:240px;">
+													<p>A network tap might be in the form of a T connector (commonly used in older
+															10BASE2 networks) or a vampire tap (commonly used in older 10BASE5 networks).
+															Figure 1-7 shows an example of a T connector. </p>
+											<img src="images/t_connector.png" style="height: 200px; width:240px;">
+											<p><b>Figure 1-7</b>&nbsp;&nbsp;T Connector </p>
+
+											<blockquote>
+													<p>NOTE The Ethernet standards mentioned here (that is, 10BASE2 and 10BASE5), in
+													addition to many other Ethernet standards, are discussed in detail in Chapter 4 , “Understanding Ethernet.”
+												</p></blockquote>
+
+											<p>A bus and all devices connected to that bus make up a network segment . As discussed
+													in Chapter 4 , a single network segment is a single collision domain, which means
+													that all devices connected to the bus might try to gain access to the bus at the same
+													time, resulting in an error condition known as a collision . Table 1-1 identifies some
+													of the primary characteristics, benefits, and drawbacks of a bus topology. </p>
+												
+													<h3 class="major">Table 1-1 </h3>
+													<h4>Characteristics, Benefits, and Drawbacks of a Bus Topology</h4>
+													<div class="table-wrapper">
+														<table>
+															<thead>
+																<tr>
+																	<th>Characteristics</th>
+																	<th>Benefits</th>
+																	<th>Drawbacks</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>To maintain appropriate
+																			electrical characteristics of
+																			the cable, the cable requires
+																			a terminator (of a specific
+																			resistance) at each end of the
+																			cable. </td>
+																	<td>Depending on the media used
+																			by the bus, a bus topology can
+																			be less expensive. </td>
+																	<td>Troubleshooting a bus
+																			topology can be difficult
+																			because problem isolation
+																			might necessitate an inspection
+																			of multiple network taps to
+																			make sure they either have a
+																			device connected or they are
+																			properly terminated. </td>
+																</tr>
+																<tr>
+																	<td>Bus topologies were popular
+																			in early Ethernet networks.</td>
+																	<td>Installation of a network based
+																			on a bus topology is easier
+																			than some other topologies,
+																			which might require extra
+																			wiring to be installed. </td>
+																	<td>Adding devices to a bus might
+																			cause an outage for other users
+																			on the bus. 
+																			</td>
+																</tr>
+																<tr>
+																	<td>Network components tap
+																			directly into the cable via
+																			a connector such as a T
+																			connector or a vampire tap.</td>
+																	<td> </td>
+																	<td>An error condition existing
+																			on one device on the bus can
+																			impact performance of other
+																			devices on the bus. </td>
+																</tr>
+																<tr>
+																	<td></td>
+																	<td></td>
+																	<td>A bus topology does not scale
+																			well, because all devices share
+																			the bandwidth available on the
+																			bus. Also, if two devices on
+																			the bus simultaneously request
+																			access to the bus, an error
+																			condition results. </td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+													<h4><b>Ring Topology</b></h4>
+													<p>Figure 1-8 offers an example of a ring topology, where traffic flows in a circular
+															fashion around a closed network loop (that is, a ring). Typically, a ring topology
+															sends data, in a single direction, to each connected device in turn, until the intended
+															destination receives the data. Token Ring networks typically relied on a ring topology, although the ring might have been the logical topology, while physically, the
+															topology was a star topology. </p>
+															<img src="images/ring.png" style="height: 200px; width:245px;">
+															<p><b>Figure 1-8 </b>&nbsp;&nbsp;Ring Topology </p>
+														<p>Token Ring, however, was not the only popular ring-based topology popular in networks back in the 1990s. Fiber Distributed Data Interface (FDDI) was another variant of a ring-based topology. Most FDDI networks (which, as the name suggests,
+																have fiber optics as the media) used not just one ring, but two. These two rings
+																sent data in opposite directions, resulting in counter-rotating rings . One benefit of
+																counter-rotating rings was that if a fiber broke, the stations on each side of the break
+																could interconnect their two rings, resulting in a single ring capable of reaching all
+																stations on the ring. </p>
+														<p>Because a ring topology allows devices on the ring to take turns transmitting on the
+																ring, contention for media access was not a problem, as it was for a bus topology. If
+																a network had a single ring, however, the ring became a single point of failure. If the
+																ring were broken at any point, data would stop flowing. Table 1-2 identifies some of
+																the primary characteristics, benefits, and drawbacks of a ring topology. 
+																</p>
+																<h3 class="major">Table 1-2 </h3>
+																<h4>Characteristics, Benefits, and Drawbacks of a Ring Topology </h4>
+																<div class="table-wrapper">
+																		<table>
+																			<thead>
+																				<tr>
+																					<th>Characteristics</th>
+																					<th>Benefits</th>
+																					<th>Drawbacks</th>
+																				</tr>
+																			</thead>
+																			<tbody>
+																				<tr>
+																					<td>Devices are interconnected by
+																							connecting to a single ring,
+																							or in some cases (for example,
+																							FDDI), a dual ring. </td>
+																					<td>A dual ring topology adds
+																							a layer of fault tolerance.
+																							Therefore, if a cable break
+																							occurred, connectivity to all
+																							devices could be restored. 
+																							</td>
+																					<td>A break in a ring when a single
+																							ring topology is used results
+																							in a network outage for all
+																							devices connected to the ring. </td>
+																				</tr>
+																				<tr>
+																					<td>Each device on a ring
+																							includes both a receiver (for
+																							the incoming cable) and a
+																							transmitter (for the outgoing
+																							cable) </td>
+																					<td>Troubleshooting is simplified
+																							in the event of a cable break,
+																							because each device on a ring
+																							contains a repeater. When the
+																							repeater on the far side of a
+																							cable break doesn’t receive any
+																							data within a certain amount
+																							of time, it reports an error
+																							condition (typically in the
+																							form of an indicator light on a
+																							network interface card [NIC]).</td>
+																					<td>Rings have scalability
+																							limitations. Specifically, a ring
+																							has a maximum length and a
+																							maximum number of attached
+																							stations. Once either of these
+																							limits is exceeded, a single ring
+																							might need to be divided into
+																							two interconnected rings. A
+																							network maintenance window
+																							might need to be scheduled to
+																							perform this ring division. 
+																							</td>
+																				</tr>
+																				<tr>
+																					<td>Each device on the ring
+																							repeats the signal it receives. </td>
+																					<td> </td>
+																					<td>Because a ring must be a
+																							complete loop, the amount
+																							of cable required for a ring
+																							is usually higher than the
+																							amount of cable required for a
+																							bus topology serving the same
+																							number of devices. </td>
+																				</tr>
+																			</tbody>
+																		</table>
+																	</div>
+														</li>
+							</article>-->
+							<!-- software -->
+
+						
+							
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+							<p class="copyright">&copy; iTECH |2019 All right reserved</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/nav.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>iTECH</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/minigames_script.css" />
+		<link rel="stylesheet" href="assets/css/nav.css" />
+		<link rel="shortcut icon" href="images/itechlogo_v1.png" type="image/x-icon">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<style>
+	</style>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<div id="mySidenav" class="sidenav" style="font-size: 10px;">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<a href="index.html"><i style="font-size:24px" class="fa">&#xf015;</i></i>Home</a>
+					<a href="instructive_programming.html"><i style="font-size:24px" class="fa">&#xf1c9;</i>Instructive Programming</a></li>
+					<a href="networking.html"><i style="font-size:24px" class="fa">&#xf1eb;</i></i>Networking</a>
+					<a href="minigames.html"><i style="font-size:24px" class="fa">&#xf192;</i>Mini-games</a>
+					<a href="misc.html"><i class="fa fa-cogs" style="font-size:24px"></i>Miscellaneous</a>
+					<a href="about.html"><i style="font-size:24px" class="fa">&#xf2b9;</i>About</a>
+				</div>
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+								<span style="font-size:20px;cursor:pointer" onclick="openNav()"><img src="images/itechlogo_v1.png" style="height: 60px; width: 60px;"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>Mini-games</h1>
+								<p>Absence is beauty, in error logs&#128540;</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#maddProgrammer"><img src="images/madProgrammer.png" style="width: 25px; height: 25px; vertical-align:middle;">MaddProgrammer</a></li>
+								<li><a href="#bugmenot"><img src="images/transparent.png" style="width: 25px; height: 25px; vertical-align:middle">BugMeNot</a></li>
+								<li><a href="#" onclick="soon()"><img src="images/neural-network-1521237-1288204.png" style="width: 25px; height: 25px; vertical-align:middle">Network Overhaul</a></li>
+								<!--<li><a href="#elements">Elements</a></li>-->
+							</ul>
+						</nav>
+					</header>
+				<!-- Main -->
+					<div id="main">
+
+						<!-- BugMeNot -->
+							<article id="bugmenot">
+								<h2 class="major">BugMeNot</h2>
+								<div id="container">
+									<button id="start">Start!</button>
+									<div id="quiz" style="display: none">
+										<div id="question"></div>
+										<div id="qImg"></div>
+										<div id="choices">
+											<div class="choice" id="A" onclick="checkAnswer('A')"></div>
+											<div class="choice" id="B" onclick="checkAnswer('B')"></div>
+											<div class="choice" id="C" onclick="checkAnswer('C')"></div>
+										</div>
+										<div id="timer">
+											<div id="counter"></div>
+											<div id="btimeGauge"></div>
+											<div id="timeGauge"></div>
+										</div>
+										<div id="progress"></div>
+									</div>
+									<div id="scoreContainer" style="display: none"></div>
+								</div>
+							</article>
+
+						<!-- madProgrammer -->
+							<article id="maddProgrammer" onclick="closebugmenot()">
+								<h4 class="major">MaddProgrammer</h4>
+								<span class="image main"><img src="images/hello world.gif" alt=""/></span>
+								How to output hello world in java?
+								<input type="text" id="maddProgrammer_question">
+								<button onclick="maddProgrammer_checkAnswer()" id="maddProgrammer_submit">Submit</button>
+							</article>
+
+							<article id="madProgrammer1">
+									<h4 class="major">MaddProgrammer</h4>
+									<span class="image main"><img src="images/8561.disgruntled dan.gif"></span>
+									<span style="font-size: 18px;">Study the code below  &#8595;</span>
+									<pre>
+										<code>
+class Test   
+{  
+	public static void main (String args[]){  
+		System.out.println(10 + 20 + "iTECH");   
+		System.out.println("iTECH" + 10 + 20);  
+	}  
+}  
+										</code>
+									</pre>
+									<span>What is the output?</span>
+									<input type="text" id="maddProgrammer_question1" placeholder="first answer here">
+									<input type="text" id="maddProgrammer_question1.5" placeholder="second answer here">
+									<button onclick="maddProgrammer1_checkAnswer()" id="maddProgrammer1_submit">Submit</button>
+									<p></p>
+							</article>
+
+							<article id="maddProgrammer2" onclick="closebugmenot()">
+									<h4 class="major">MaddProgrammer</h4>
+									<span class="image main"><img src="images/8561.disgruntled dan.gif" alt=""/></span>
+									<span style="font-size: 18px;">Something missing help me..  &#8595;</span>
+									<pre>
+											<code>
+public class AddNumbers{
+	public static void  main(String[]args){
+	double num1 = 10;
+	double num2 = 20;
+	double num3 = num1+num2;
+	System.out.println(num3);
+}
+											</code>
+										</pre>
+									<span>Whats the error..</span>
+									<input type="text" id="maddProgrammer_question2">
+									<button onclick="maddProgrammer2_checkAnswer()" id="maddProgrammer2_submit">Submit</button>
+								</article>
+
+						
+								
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+							<p class="copyright">&copy; iTECH |2019 All right reserved <img src="images/fbc_logo.png" style="width: 20px; height:20px; vertical-align: middle;"></p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/nav.js"></script>
+			<script src="assets/js/quiz.js"></script>
+			<script src="assets/js/madProgrammer.js"></script>
+	</body>
+</html>

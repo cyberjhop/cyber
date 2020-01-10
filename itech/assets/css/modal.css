@@ -1,0 +1,32 @@
+#modal, #modal1, #modal2, #modal3, #modal4, #modal5, 
+#modal6, #modal7, #modal8, #modal9, #modal10{
+  width: 250px;
+  padding: 15px 15px 15px 15px;
+  background-color: skyblue;
+  margin-top: 20px;
+  color: black;
+}
+#modal, #modal1, #modal2, #modal3, #modal4, #modal5,
+#modal6, #modal7, #modal8, #modal9, #modal10,
+li p{
+ font-size: 2vh;
+}
+.miscTips{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 5px;
+  box-shadow: 0px 5px 15px 0px;
+  transition: 1s ease-in-out;
+}
+.miscTips img{
+  width: auto;
+}
+.miscTips:hover{
+  cursor: pointer;
+  color: black;
+  background-color: white;
+  transition: 1s ease-in-out;
+}
